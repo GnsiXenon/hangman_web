@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+* {
+    overflow: hidden;
+}
+
+body{
+    background: #e9c46a ;
+}
+
+h1 {
+    color: rebeccapurple;
+    font-family: 'Indie Flower', sans-serif;
+    font-size: 10vw;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+p {
+    font-size: 2vw;
+    display: block;
+    text-align: center;
+    justify-content: center;
+    margin-top: 1vh;
+}
+
+.game-information{ 
+    display: flex;
+    text-align: center;
+    justify-content:flex-start;
+}
+
+.button-game{
+    width: 150px;
+}
+
+.game-help {
+    font-family: 'Indie Flower', sans-serif;
+    display: block;
+    background: linear-gradient(45deg, #e9c46a,#e9c46a, black) ;
+    background-size: cover;
+    width: 7vw;
+    color: white;
+    padding:1vh;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 0.5vw 0.7vw;
+    height: 7vh;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 1.4vw;
+    border: solid black 0.2vw;
+    font-size: 1.5vw;
+}
+
+.button-game:hover {
+    transform: translateY(-5px);
+    transition: 1s;
+}

@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap%27');
+body{
+    margin: 0px;
+    margin-top: -1.55%;
+    
+}
+
+#Test{
+    box-shadow: 0.3vw 0.1vw 0.1vw rgb(1, 0, 0);
+    background-color: #264653;
+    margin-top: 2.8vh;
+    height: 5vw;
+    border: 1vw ridge rgba(255, 255, 3, 0.6);
+}
+
+.projet{
+    font-family: 'Indie Flower', sans-serif;
+    color: #2a9d8f;
+    display: flex;
+    margin-top: -2.5vh;
+    margin-left: 1vw;
+    position:relative;
+    top: 50%;
+    font-size: 2vw;
+}
+
+p{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.text{
+    font-size: 1.2vw;
+    color: #e76f51;
+}
+
+li {
+    list-style-type: none;
+}
+.menu{
+    box-shadow: 1vw 1vw 1vw rgb(0, 0, 0);
+    background: linear-gradient(45deg, #e9c46a, #f4a261,#e76f51);
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   top: 8vw;
+   right: 90%;
+   border: 1vw ridge rgba(211, 220, 50, .6);
+
+
+}
+
+.button{
+    font-family: 'Indie Flower', sans-serif;
+    display: block;
+    background: linear-gradient(90deg, #264653, #2a9d8f);
+    background-size: cover;
+    width: 7vw;
+    color: white;
+    padding: 1vh;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 1vw;
+    height: 7vh;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 1.4vw;
+    border: solid black 0.2vw;
+    font-size: 3vh;
+}
+
+#choose-difficulty {
+    font-size: 5vh;
+}
+
+.hidden-word {
+    font-size: 5vh;
+}
+
+.button-difficulty{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 5vw;
+}
+.button-hub{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    position: relative;
+}
+
+.game-help {
+        font-family: 'Indie Flower', sans-serif;
+        display: block;
+        background: linear-gradient(45deg, #e9c46a,#e9c46a, black);
+        background-size: cover;
+        width: 7vw;
+        color: white;
+        padding: 1vh;
+        box-sizing: border-box;
+        cursor: pointer;
+        margin: 3vw 0.5vw;
+        height: 7vh;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 1.4vw;
+        border: solid black 0.2vw;
+        font-size: 3vh;
+    }
+
+.Hangman-graphic{
+    box-shadow: 0.6vw 0.3vw 0.2vw rgb(0, 0, 0);
+    background-color: #e9c46a;
+   position: relative;
+   border: 1vw ridge rgba(211, 220, 50, .6);
+   margin-top: 1vw;
+   margin-left: 50vw;
+   margin-right: 50vw;
+   height: 10vw;
+   width: 10vw;
+right: 5vw;
+
+}
+
+
+
+.keyboard{
+    
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin-top: 1vw;
+    margin-left:2vw ;
+    
+
+}
+
+
+#show{
+    margin: 0.1vw;
+    height: 3vw;
+    width: 3vw;
+    background-color: #2a9d8f;
+    border: solid black 0.2vw;
+    font-size: 1vw;
+}
+
+#hidden{
+    margin: 0.1vw;
+    height: 3vw;
+    width: 3vw;
+    background-color: grey;
+    border: solid black 0.2vw;
+    font-size: 1vw;
+}
+.mots{
+    color: red;
+    font-size: large;
+}
+
+
+
+.button:hover{
+    transform: translateY(-5px);
+    transition: 1s;
+
+}
+
+
+
+.Trial{
+    box-shadow: 0.6vw 0.3vw 0.2vw rgb(0, 0, 0);
+    background-color: #e9c46a;
+   position: relative;
+   border: 1vw ridge rgba(211, 220, 50, .6);
+   margin-top: 2%;
+   margin-left: 50%;
+   width: 10%;
+   right: 5%;
+
+  
+
+
+
+}
+.Number{
+    font-size: 5vh;
+    font-family: 'Indie Flower', sans-serif;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    margin-top:2vh;
+}
+
+.imgHangman{
+    width: 100%;
+}
+.form-example{
+    font-size: 1vw;
+
+}
+
+@media (orientation: portrait){
+
+
+    #Test{
+        box-shadow: 0.3vh 0.1vh 0.1vh rgb(1, 0, 0);
+        background-color: #264653;
+        margin-top: 1vw;
+        height: 5vh;
+        border: 1vh ridge rgba(255, 255, 3, 0.6);
+    }
+    
+    .projet{
+        font-family: 'Indie Flower', sans-serif;
+        color: #2a9d8f;
+        display: flex;
+        margin-top: -2.5vh;
+        margin-left: 1vh;
+        position:relative;
+        top: 50%;
+        font-size: 2vh;
+    }
+    
+    .text{
+        font-size: 1.2vh;
+        color: #e76f51;
+        margin-left: 12vh;
+    }
+    
+    .menu{
+        box-shadow: 1vh 1vh 1vh rgb(0, 0, 0);
+        background: linear-gradient(45deg, #e9c46a, #f4a261,#e76f51);
+       position: absolute;
+       bottom: 0;
+       left: 0;
+       top: 20vw;
+       right: 80%;
+       border: 1vh ridge rgba(211, 220, 50, .6);
+    
+    
+    }
+    
+    .button{
+        font-family: 'Indie Flower', sans-serif;
+        display: block;
+        background: linear-gradient(90deg, #264653, #2a9d8f);
+        background-size: cover;
+        width: 6vh;
+        color: white;
+        box-sizing: border-box;
+        cursor: pointer;
+        height: 3vh;
+        text-align: center;
+        border-radius: 1.4vh;
+        border: solid black 0.2vh;
+        font-size:  1vh;
+    }
+    
+    #click-difficulty {
+        font-size: 5vh;
+    }
+    
+    .hidden-word {
+        font-size: 5vh;
+        margin-left: 10vh;
+    }
+    
+    .button-difficulty{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        position: relative;
+        margin-top: 5vh;
+    }
+    
+    .game-help {
+        font-family: 'Indie Flower', sans-serif;
+        display: block;
+        background: linear-gradient(45deg, #e9c46a,#e9c46a, black) ;
+        background-size: cover;
+        width: 7vh;
+        color: white;
+        padding:1vh;
+        box-sizing: border-box;
+        cursor: pointer;
+        margin: 0.5vh 0.7vh;
+        height: 7vw;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 1.4vh;
+        border: solid black 0.2vh;
+        font-size: 1.5vh;
+    }
+    
+    .Hangman-graphic{
+        box-shadow: 0.6vw 0.3vw 0.2vw rgb(0, 0, 0);
+        background-color: #e9c46a;
+       position: relative;
+       border: 1vw ridge rgba(211, 220, 50, .6);
+       margin-top: 1vw;
+       margin-left: 55%;
+       height: 10vh;
+       width: 10vh;
+    right: 5vw;
+    
+    }
+    
+    
+    
+    .keyboard{
+        
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        margin-top: 1vh;
+        margin-left:20% ;
+        
+    
+    }
+    
+    
+    #show{
+        margin: 0.1vh;
+        height: 3vh;
+        width: 3vh;
+        background-color: #2a9d8f;
+        border: solid black 0.2vh;
+        font-size: 1vh;
+    }
+    
+    #hidden{
+        margin: 0.1vh;
+        height: 3vh;
+        width: 3vh;
+        background-color: grey;
+        border: solid black 0.2vh;
+        font-size: 1vh;
+    }
+
+.form-example{
+    font-size: 1vh;
+}
+.Trial{
+    box-shadow: 0.6vw 0.3vw 0.2vw rgb(0, 0, 0);
+    background-color: #e9c46a;
+   position: relative;
+   border: 1vw ridge rgba(211, 220, 50, .6);
+   margin-top: 2%;
+   margin-left: 59%;
+   width: 10%;
+   right: 5%;
+}
+.Number{
+    font-size: 5vw;
+    font-family: 'Indie Flower', sans-serif;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    margin-top:2vh;
+}
+}

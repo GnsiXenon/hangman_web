@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/lose.css">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+  <div class="game-information">
+    <form action="/index" method="post" class="button-game">
+        <div>
+          <input type="submit" value="Accueil" name="home" id="home" class="game-help">
+        </div>
+      </form> 
+    <form action="/menu" method="post" class="button-game">
+      <div>
+        <input type="submit" value="Rejouez" name="game" id="game" class="game-help"> 
+      </div>
+    </form>
+    <h1 class="perdu">Felicitation vous avez PERDU !!!
+      <br>
+      Le mots etait "{{.Word}}"
+    </h1>
+    <div>
+        <img src="/styles/img/0.gif" class="img">
+    </div>
+  </div> 
+</body>
+</html>

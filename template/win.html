@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/win.css">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+  <div class="game-information">
+    <form action="/index" method="post" class="button-game">
+        <div class="button-game">
+          <input type="submit" value="Accueil" name="home" id="home" class="game-help">
+        </div>
+      </form> 
+    <form action="/menu" method="post" class="button-game">
+      <div class="button-game">
+        <input type="submit" value="Rejouez" name="game" id="game" class="game-help"> 
+      </div>
+    </form>
+    <div>
+    <h1 class="win-title">Félicitations vous avez gagnez !</h1>
+    {{if .AddWord}}
+    {{else}}
+    <form action="/AddWord" method="post" class="t">
+        <input type="text" required placeholder="Entrer un mot" class="button-word" name="word" id="word">
+        <input type="submit" class="button-word" id="send">
+    </form>
+   {{end}}
+  </div>
+    
+    <div class="gif">
+      <iframe src="https://giphy.com/embed/wmuyDdRNXYximlvYM1" class="giphy-embed" frameBorder="">
+      </iframe>
+    </div>
+</body>
+</html>

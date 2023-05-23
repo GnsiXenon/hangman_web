@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman</title>
+    <link rel="stylesheet" href="/styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="Test">
+    <h1 class="projet">Hangman</h1>
+  </div>
+  
+  <nav class="menu">
+      <form action="/index" method="post" class="button-hub">
+      <input type="submit" class="button" value="Accueil">
+      </form>
+      <form action="/rules" method="post" class="button-hub">
+      <input type="submit" class="button" value="Règles">
+      </form>
+    <form action="/GetDifficulty" method="post" class="button-difficulty">
+      <div>
+        <input type="submit" value="Facile" name="difficulty" id="difficulty" class="game-help" required>
+        <input type="submit" value="Moyenne" name="difficulty" id="difficulty" class="game-help" required>
+        <input type="submit" value="Difficile" name="difficulty" id="difficulty" class="game-help" required>
+      </div>
+    </form>
+  </nav>
+  {{if not .GameStart}}
+      <p id="choose-difficulty">Cliquer sur une difficulté</p>
+      {{else}}
+    <p class="hidden-word">{{.HidenWord}}</p>
+    <div>
+      <p class="text">{{.Text}}</p>
+    </div>
+    <div class="Hangman-graphic">
+
+      <img src="/styles/img/{{.Attempt}}.png" class="imgHangman">
+    </div>
+
+    
+      <div class="keyboard">
+      <form action="/getdata" method="post" class="form-example">
+          <div >
+            {{range .Keyboard1}}
+              {{if .Visible}}
+                <input type="submit" value={{.Letter}} name="name" id="show" required>
+              {{else}}
+                <input type="submit" value={{.Letter}} name="name" id="hidden" disabled>
+
+              {{end}}
+            {{end}}
+          </div>
+          <div>
+            {{range .Keyboard2}}
+              {{if .Visible}}
+                <input type="submit" value={{.Letter}} name="name" id="show" required>
+              {{else}}
+                <input type="submit" value={{.Letter}} name="name" id="hidden" required disabled>
+              {{end}}
+            {{end}}
+          </div> 
+          <div>
+            {{range .Keyboard3}}
+              {{if .Visible}}
+                <input type="submit" value={{.Letter}} name="name" id="show" required>
+              {{else}}
+                <input type="submit" value={{.Letter}} name="name" id="hidden" required disabled>
+              {{end}}
+            {{end}}
+          </div> 
+        
+          </div> 
+        </form>
+    </div>
+    <div class="Trial">
+      <p class="Number">{{.Attempt}}</p>
+      </div>
+      {{end}}
+    
+      
+</body>
+</html>

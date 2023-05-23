@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+.game-name{
+    color: #2a9d8f;
+    font-family: 'Indie Flower', sans-serif;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  margin-top: 25vh;
+    font-size: 10vw;
+}
+
+body {
+    background: linear-gradient(90deg, #e9c46a, #f4a261,#e76f51);
+}
+
+p{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.game-information{ 
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.button-game{
+    width: 20vw;
+}
+
+.game-help {
+    display: block;
+    background: linear-gradient(45deg, #e9c46a, #f4a261,#e76f51);
+    background-position: center;
+    background-size: cover;
+    width: 15vw;
+    color: white;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 2vw 2.5vw;
+    height: 7vh;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 2vw;
+    border: solid black 0.2vw;
+    font-size: 2vw;
+}
+
+.button-game:hover {
+    transform: translateY(-5px);
+    transition: 1s;
+}
+
+@media (orientation: portrait) {
+    .game-name{
+        color: #2a9d8f;
+        font-family: 'Indie Flower', sans-serif;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+      margin-top: 25vh;
+        font-size: 10vh;
+    }
+
+    
+.button-game{
+    width: 20vh;
+}
+
+.game-help {
+    display: block;
+    background: linear-gradient(45deg, #e9c46a, #f4a261,#e76f51);
+    background-position: center;
+    background-size: cover;
+    width: 15vh;
+    color: white;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 2vh 2.5vh;
+    height: 7vh;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 2vh;
+    border: solid black 0.2vh;
+    font-size: 2vh;
+}
+
+  }
